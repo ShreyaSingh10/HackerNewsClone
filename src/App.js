@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import './App.css';
-import Nav from './components/Nav.js'
-import StoryList from './components/StoryList.js';
-import store from './store/';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+import Nav from './components/Nav.js'
+import StoryList from './components/StoryList.js';
 import LoginSignup from './components/LoginSignup.js';
+
+import store from './store/';
+
+import './components/styles.css'
 
 class App extends Component {
   render() {

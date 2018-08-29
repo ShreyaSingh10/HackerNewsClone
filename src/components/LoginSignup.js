@@ -1,7 +1,6 @@
 import React from 'react';
+
 import './styles.css';
-import * as firebase from 'firebase';
-//import Fire from './config/Fire.js';
 
 class LoginSignup extends React.Component{
   render(){

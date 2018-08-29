@@ -22,7 +22,6 @@ html, body{
   float: right;
   padding: 5px 15px 0 0;
 }
-
 .login a{
   color: black;
   text-decoration: none;
@@ -37,7 +36,6 @@ html, body{
   padding: 5px 0 0 0px;
   background: ghostwhite;
 }
-
 .story-list-item li{
   margin: 5px 10px 5px 0px;
   text-decoration: none;
