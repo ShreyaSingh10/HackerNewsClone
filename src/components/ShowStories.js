@@ -8,14 +8,16 @@ import './styles.css';
 
 const mapDispatchToProps = dispatch => ({
   handleClick: getShowStories(dispatch)
-})
+});
 
-class ShowStories extends React.Component{
-  render(){
-    return(
+class ShowStories extends React.Component {
+  render() {
+    return (
       <span>
-        <Link to ='/showstories' onClick={ e => e.preventDefault() }>
-          <li className="nav_list_item" onClick={this.props.handleClick}>show |</li>
+        <Link to="/ShowStories">
+          <li className="nav_list_item" onClick={this.props.handleClick}>
+            show{' '}
+          </li>
         </Link>
       </span>
     );

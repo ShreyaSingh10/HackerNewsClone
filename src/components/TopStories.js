@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { getTopStories } from '../store/index.js';
 
@@ -7,18 +8,25 @@ import './styles.css';
 
 const mapDispatchToProps = dispatch => ({
   handleClick: getTopStories(dispatch)
-})
+});
 
 class TopStories extends React.Component {
-
-  componentDidMount(){
+  componentDidMount() {
     this.props.handleClick();
   }
 
-  render(){
-    return(
+  render() {
+    return (
       <span>
-          <li className="nav_list_item" id="hacker" onClick={this.props.handleClick}><b>Hacker News</b></li>
+        <Link to="/TopStories">
+          <li
+            className="nav_list_item"
+            id="hacker"
+            onClick={this.props.handleClick}
+          >
+            <b>Hacker News</b>
+          </li>
+        </Link>
       </span>
     );
   }
