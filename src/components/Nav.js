@@ -10,24 +10,23 @@ import TopStories from './TopStories.js';
 
 import './styles.css';
 
-
 const Nav = () => (
-    <div className="navigation_bar">
-      <ul>
-        <span className="stories_tabs">
-          <TopStories/>
-          <span className="story_types">
-            <NewStories/>
-            <ShowStories/>
-            <JobStories/>
-          </span>
+  <div className="navigation_bar">
+    <ul>
+      <span className="stories_tabs">
+        <TopStories />
+        <span className="story_types">
+          <NewStories />
+          <ShowStories />
+          <JobStories />
         </span>
-        <span className="login">
-          <span className="username">Username |</span>
-          <Link to="/loginSignup">login</Link>
-        </span>
-      </ul>
-    </div>
-  );
+      </span>
+      <span className="login">
+        <span className="username">Username |</span>
+        <Link to="/loginSignup">login</Link>
+      </span>
+    </ul>
+  </div>
+);
 
 export default Nav;
